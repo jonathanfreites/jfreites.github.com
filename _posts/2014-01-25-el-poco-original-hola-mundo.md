@@ -9,8 +9,6 @@ tags: ['general','personal']
 
 Hola como estan todos?
 
-## Segundo titulo
-
 Espero que todo vaya bien
 
 ![Github Pages logo](http://media02.hongkiat.com/create-github-page/cover.jpg)
