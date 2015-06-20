@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="{{ site.description }}">
+	    <meta name="author" content="{{ site.author.name }}" />
+	    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	    <link href="http://feeds.feedburner.com/{{ site.author.feedburner }}" rel="alternate" title="your title" type="application/atom+xml" />
+
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/main.css" type="text/css" />
+	    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygments.css" type="text/css" />
+	</head>
+
+    <body>
+
+      <div class="container">
+
+        <div class="header">
+		    <h1>
+		        <a style="color: #000;" href="{{ HOME_PATH }}">{{ site.title }}</a>
+		    </h1>
+		    <p class="sub">
+		        {{ site.description }}
+		    </p>
+
+		    <div class="menu">
+		        <ul class="navlist">
+		            {% for link in site.links %}
+		            <li>
+		                <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+		            </li>
+		            {% endfor %}
+		        </ul>
+		    </div>
+		</div>
+
+        {{ content }}
+
+        <footer class="site-footer">
+			<a href="https://github.com/alixedi/typewriter">Typewriter</a> by <a href="http://twitter.com/alixedi">alixedi</a> <br /> Customized by <a href="http://twitter.com/jonathanfch">Jonathan Freites</a>
+		</footer>
+
+      </div>
+
+	{% include JB/analytics %}
+    </body>
+</html>
