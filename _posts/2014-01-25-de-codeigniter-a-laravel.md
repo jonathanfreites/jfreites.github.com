@@ -3,7 +3,7 @@ layout: post
 title: "De Codeigniter a Laravel"
 description: ""
 category: "PHP"
-tags: ['programacion','PHP','Laravel','Codeigniter']
+tags: ['Programacion','PHP','Laravel','Codeigniter']
 ---
 {% include JB/setup %}
 

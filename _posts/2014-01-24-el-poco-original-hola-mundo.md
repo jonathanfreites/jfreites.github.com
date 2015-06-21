@@ -3,7 +3,7 @@ layout: post
 title: "El poco original Hola Mundo"
 description: ""
 category: "General"
-tags: ['general','personal']
+tags: ['Personal']
 ---
 {% include JB/setup %}
 

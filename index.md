@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jonathan Freites
+title: Jonathan Freites | blogging my life
 tagline: No hay lugar para el "UNDO"
 ---
 {% include JB/setup %}
